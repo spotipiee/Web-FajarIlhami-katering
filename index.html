@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katering Jayjanan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Katering Jayjanan</h1>
+      <p>Hidangan Lezat untuk Segala Acara</p>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#promo">Promo</a></li>
+          <li><a href="menu.html">Menu Opsional Lain</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Deskripsi Tentang Katering Jayjanan -->
+    <section id="about">
+      <h2>Tentang Kami</h2>
+      <p>
+        Katering Jayjanan menawarkan hidangan lezat yang cocok untuk berbagai acara. Kami berkomitmen untuk menyediakan makanan berkualitas tinggi dengan bahan-bahan terbaik. Dari acara pernikahan hingga ulang tahun, kami siap menyajikan hidangan yang akan memanjakan lidah Anda dan tamu Anda. Dengan pengalaman bertahun-tahun, kami selalu menjaga rasa dan pelayanan yang terbaik.
+      </p>
+      <p>
+        Layanan kami meliputi berbagai jenis menu, mulai dari makanan ringan hingga hidangan berat yang dapat disesuaikan dengan kebutuhan acara Anda. Kami juga menyediakan paket catering dengan harga terjangkau dan pengiriman tepat waktu.
+      </p>
+    </section>
+
+    <!-- Frame Section --> 
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d495.7113510002359!2d106.6707511!3d-6.3042938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5a4cc52804f%3A0x6fa1811ddef85dc3!2sKAJU%20RAMEN%2C%20BSD!5e0!3m2!1sid!2sid!4v1734490963953!5m2!1sid!2sid"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Menu Favorit</h2>
+      <div class="menu-items">
+        <div>
+          <img
+            src="kids meal.jpeg"
+            alt="Kids Meal Set"
+            width="300"
+            height="300"
+          />
+          <p>Kids Meal Set</p>
+        </div>
+        <div>
+          <img
+            src="katsu kari.jpeg"
+            alt="Katsu Curry"
+            width="300"
+            height="300"
+          />
+          <p>Katsu Curry</p>
+        </div>
+        <div>
+          <img
+            src="soto oseng daging.jpeg"
+            alt="Soto Oseng Daging"
+            width="300"
+            height="300"
+          />
+          <p>Soto Daging</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Section with Video -->
+    <section id="promo">
+      <h2>Promo Spesial</h2>
+      <video controls>
+        <source
+          src="nasi_goreng.mp4"
+          type="video/mp4"
+          width="300"
+          height="300"
+        />
+      </video>
+      <p>Nikmati diskon 10% untuk setiap pesanan pertama Anda! Tonton video ini untuk mengetahui menu spesial kami yang dapat Anda pesan dengan harga lebih terjangkau. Buruan, promo terbatas!</p>
+    </section>
+    
+    <!-- Bullet and Numbering List -->
+    <section>
+      <h2>Kenapa Pilih Kami?</h2>
+      <ul>
+        <li>Bahan berkualitas</li>
+        <li>Harga terjangkau</li>
+        <li>Pengiriman tepat waktu</li>
+      </ul>
+      <ol>
+        <li>Pilih menu Anda</li>
+        <li>Klik tombol pesan</li>
+      </ol>
+    </section>
+
+    <!-- Tabel Menu -->
+    <section>
+      <h2>Harga Menu</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama Hidangan</th>
+            <th>Harga</th>
+            <th>Ketersediaan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kids Meal Set</td>
+            <td>Rp 35,000</td>
+            <td>Tersedia</td>
+          </tr>
+          <tr>
+            <td>Katsu Curry</td>
+            <td>Rp 40,000</td>
+            <td>Tersedia</td>
+          </tr>
+          <tr>
+            <td>Soto Oseng Daging</td>
+            <td>Rp 39,000</td>
+            <td>Tersedia</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <a class="order-button" href="order.html">Order Now</a>
+    </section>
+
+    <!-- Dialog Box -->
+    <dialog id="promoDialog">
+      <p>Selamat datang! Ambil diskon 10% untuk pertama kali pesan.</p>
+      <button id="closeDialog">Tutup</button>
+    </dialog>
+
+    <!-- Sitemap Menu -->
+    <section id="sitemap">
+      <h2>Sitemap</h2>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#menu">Menu Favorit</a></li>
+          <li><a href="#promo">Promo Spesial</a></li>
+          <li><a href="menu.html">Menu Opsional Lain</a></li>
+          <li><a href="order.html">Order Now</a></li>
+          <li><a href="#footer">Kontak</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">&copy; 2024 Katering Jayjanan</footer>
+
+    <script>
+      // Array untuk menyimpan menu favorit
+      const menuArray = ["Kids Meal Set", "Katsu Curry", "Soto Oseng Daging"];
+
+      // Fungsi untuk menampilkan menu favorit di konsol
+      function tampilkanMenu() {
+        console.log("Menu Favorit Kami:");
+        menuArray.forEach((menu, index) => {
+          console.log(`${index + 1}. ${menu}`);
+        });
+      }
+
+      // Memanggil fungsi untuk menampilkan menu favorit
+      tampilkanMenu();
+
+      // Menambahkan interaktivitas pada navigasi (scroll ke bagian yang diinginkan)
+
+      // Fungsi untuk menampilkan dialog promo secara otomatis setelah 2 detik
+      const promoDialog = document.getElementById("promoDialog");
+      const closeDialogButton = document.getElementById("closeDialog");
+
+      setTimeout(() => {
+        promoDialog.showModal();
+      }, 2000);
+
+      closeDialogButton.addEventListener("click", () => {
+        promoDialog.close();
+      });
+    </script>
+  </body>
+</html>

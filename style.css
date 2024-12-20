@@ -1,0 +1,283 @@
+* {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  color: #333;
+  background-image: url('background.jpg'); /* Tambahkan background gambar yang menarik */
+  background-size: cover; /* Menggunakan gambar latar belakang */
+  background-position: center; /* Menyesuaikan gambar latar belakang agar selalu di tengah */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+  background: rgba(0, 215, 136, 0.9); /* Header transparan dengan sedikit efek warna */
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 3px solid #00b378;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase; /* Membuat teks header lebih menonjol */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #ffd700; /* Mengubah latar belakang menjadi emas saat hover */
+  color: #333; /* Mengubah teks menjadi gelap */
+}
+
+/* Sections */
+section {
+  padding: 3rem;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan besar */
+  max-width: 1200px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-10px); /* Efek angkat pada section */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Table */
+table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Bayangan halus di bawah tabel */
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+table th {
+  background-color: #00d788;
+  color: white;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd; /* Efek hover pada baris tabel */
+  cursor: pointer;
+}
+
+/* Form */
+form {
+  margin-top: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Order Button */
+.order-button {
+  background-color: #00d788;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 2rem;
+}
+
+.order-button:hover {
+  background-color: #00b378; /* Memberikan warna lebih gelap pada hover */
+  transform: scale(1.1); /* Memperbesar tombol saat hover */
+}
+
+/* Kontainer Menu */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Kartu */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Efek angkat saat hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px; /* Mengatur tinggi gambar agar seragam */
+}
+
+.card h3 {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.card .price {
+  margin: 0 1rem 1rem;
+  font-size: 1.2rem;
+  color: #00d788;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #00d788;
+  color: white;
+  font-weight: bold;
+  padding: 2rem 0;
+  position: relative;
+  bottom: 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+/* Animasi Efek pada Dialog */
+dialog {
+  border: none;
+  padding: 20px;
+  background-color: rgba(0, 215, 136, 0.9);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5); /* Membuat latar belakang dialog lebih gelap */
+}
+
+#promoDialog {
+  opacity: 0;
+}
+
+#promoDialog[open] {
+  opacity: 1;
+}
+
+/* Tombol Close Dialog */
+#closeDialog {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#closeDialog:hover {
+  background-color: #ff4500;
+}
+
+/* Styling untuk Sitemap */
+#sitemap {
+  background-color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 2px solid #00d788; /* Memberikan garis pemisah */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#sitemap h2 {
+  font-size: 2rem;
+  color: #00d788;
+  margin-bottom: 1rem;
+}
+
+#sitemap nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sitemap nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+#sitemap nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#sitemap nav ul li a:hover {
+  background-color: #00d788;
+  color: white;
+}
